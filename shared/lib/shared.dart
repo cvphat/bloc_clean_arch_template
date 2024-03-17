@@ -1,7 +1,5 @@
 library shared;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:bloc_clean_arch/bloc_clean_arch.dart';
+export 'src/config/config.dart';
+export 'src/generated/l10n.dart';

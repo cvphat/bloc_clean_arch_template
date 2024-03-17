@@ -1,6 +1,7 @@
 name: data
 description: "A new Flutter package project."
 version: 0.0.1
+publish_to: 'none'
 homepage:
 
 environment:
@@ -12,6 +13,8 @@ dependencies:
     sdk: flutter
   get_it: ^7.6.7
   injectable: ^2.3.2
+  shared:
+    path: ../shared
 
 dev_dependencies:
   flutter_test:

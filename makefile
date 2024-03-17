@@ -12,6 +12,9 @@ gen:
 
 watch:
 	@melos force_watch_all
+
+get_shared:
+	@melos get_shared
 	
 sync:
 	@melos bootstrap

@@ -58,11 +58,11 @@ packages:
     source: hosted
     version: "8.1.3"
   bloc_clean_arch:
-    dependency: "direct main"
+    dependency: transitive
     description:
       path: "."
-      ref: "v0.0.3"
-      resolved-ref: "79c877ad1b20382fb3deb2036a30cb683ad80a85"
+      ref: "v0.0.8"
+      resolved-ref: "4f2bc1afd1a44a3ff90c5bd8ddeb5f907f72d8d8"
       url: "https://github.com/cvphat/bloc_clean_arch.git"
     source: git
     version: "0.0.1"
@@ -202,6 +202,20 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.6"
+  data:
+    dependency: "direct main"
+    description:
+      path: "../data"
+      relative: true
+    source: path
+    version: "0.0.1"
+  domain:
+    dependency: "direct main"
+    description:
+      path: "../domain"
+      relative: true
+    source: path
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -348,6 +362,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.5.1"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: d6f56758b7d3014a48af9701c085700aac781a92a87a62b1333b46d8879661cf
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.19.0"
   io:
     dependency: transitive
     description:
@@ -532,6 +554,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.27.7"
+  shared:
+    dependency: "direct main"
+    description:
+      path: "../shared"
+      relative: true
+    source: path
+    version: "0.0.1"
   shelf:
     dependency: transitive
     description:

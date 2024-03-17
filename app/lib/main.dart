@@ -1,20 +1,25 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-void main() {
-  runApp(const MainApp());
+import 'package:app/app/my_app.dart';
+import 'package:app/initializer/app_initializer.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
+import 'package:shared/shared.dart';
+
+import 'base/app_config.dart';
+
+void main() => runZonedGuarded(_runMyApp, _reportError);
+
+Future<void> _runMyApp() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
+  await AppInitializer(AppConfig.getInstance()).init();
+  final initialRoute = await loadInitialRoute<PageRouteInfo>();
+  runApp(MyApp(initialRoute: initialRoute));
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void _reportError(Object error, StackTrace stackTrace) {
+  Log.e(error, stackTrace: stackTrace, name: 'Uncaught exception');
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  // report by Firebase Crashlytics here
 }
