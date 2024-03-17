@@ -1,0 +1,10 @@
+{
+    "@@author": "cvphat",
+    "@@locale": "vi",
+    "login": "Đăng nhập",
+    "@login": {
+        "context": "Dùng cho button đang nhập",
+        "description": "Login button text",
+        "type": "text"
+    }
+}

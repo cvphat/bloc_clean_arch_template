@@ -1,0 +1,10 @@
+{
+    "@@locale": "en",
+    "@@author": "cvphat",
+    "login": "Login",
+    "@login": {
+        "context": "Using for button text",
+        "description": "Login button text",
+        "type": "text"
+    }
+}

@@ -6,3 +6,20 @@ packages:
 command:
   bootstrap:
     runPubGetInParallel: false
+
+scripts:
+  pub_upgrade:
+    run: dart pub global run melos exec --fail-fast "flutter pub upgrade"
+    description: Run pub upgrade on all module.
+    
+  l10n:
+    run: dart pub global run melos exec --fail-fast --scope="*shared*" --flutter -- flutter pub run intl_utils:generate
+    description: Generates l10n for all app packages.
+
+  force_build_all:
+    run: dart pub global run melos exec --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build all modules.
+    
+  force_watch_all:
+    run: dart pub global run melos exec --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch all modules.
