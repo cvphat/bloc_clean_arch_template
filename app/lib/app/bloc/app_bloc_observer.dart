@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared/shared.dart';
+import 'package:core/core.dart';
 
 class AppBlocObserver extends BlocObserver {
   AppBlocObserver({

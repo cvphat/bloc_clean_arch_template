@@ -1,5 +1,5 @@
 import 'package:domain/src/di/di.dart';
-import 'package:shared/shared.dart';
+import 'package:core/core.dart';
 
 class DomainConfig extends Config {
   factory DomainConfig.getInstance() {

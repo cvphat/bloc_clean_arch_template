@@ -1,0 +1,27 @@
+name: core
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  async: ^2.11.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.4
+  get_it: ^7.6.7
+  provider: ^6.1.2
+  rxdart: ^0.27.7
+  freezed_annotation: ^2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  freezed: ^2.4.7
+  build_runner: ^2.4.8
+
+flutter:

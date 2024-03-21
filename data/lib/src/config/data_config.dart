@@ -1,5 +1,5 @@
 import 'package:data/src/di/di.dart';
-import 'package:shared/shared.dart';
+import 'package:core/core.dart';
 
 class DataConfig extends Config {
   factory DataConfig.getInstance() {

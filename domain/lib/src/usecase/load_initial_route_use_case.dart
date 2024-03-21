@@ -1,5 +1,5 @@
 import 'package:injectable/injectable.dart';
-import 'package:shared/shared.dart';
+import 'package:core/core.dart';
 
 @Injectable(as: BaseLoadInitialRouteUseCase)
 class LoadInitialResourceUseCase extends BaseLoadInitialRouteUseCase {

@@ -15,6 +15,9 @@ watch:
 
 get_shared:
 	@melos get_shared
+
+l10n:
+	@melos run l10n
 	
 sync:
 	@melos bootstrap

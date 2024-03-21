@@ -6,5 +6,9 @@
         "context": "Dùng cho button đang nhập",
         "description": "Login button text",
         "type": "text"
+    },
+    "errorUnknow": "Đã xãy ra lỗi",
+    "@errorUnknow": {
+        "description": "For Unknow exception"
     }
 }

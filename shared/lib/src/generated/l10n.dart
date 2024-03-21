@@ -59,6 +59,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Unknow Error`
+  String get errorUnknow {
+    return Intl.message(
+      'Unknow Error',
+      name: 'errorUnknow',
+      desc: 'For Unknow exception',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

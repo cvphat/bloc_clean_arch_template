@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:shared/shared.dart';
+import 'package:core/core.dart';
 
 import 'bloc/app_bloc.dart';
 

@@ -6,5 +6,9 @@
         "context": "Using for button text",
         "description": "Login button text",
         "type": "text"
+    },
+    "errorUnknow": "Unknow Error",
+    "@errorUnknow": {
+        "description": "For Unknow exception"
     }
 }
